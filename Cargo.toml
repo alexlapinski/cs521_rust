@@ -1,0 +1,6 @@
+[package]
+name = "CS521"
+version = "0.1.0"
+authors = ["Alex Lapinski <contact@alexlapinski.name>"]
+
+[dependencies]
