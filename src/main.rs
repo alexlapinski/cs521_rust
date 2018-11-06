@@ -3,7 +3,12 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let arr: [i32; 5] = [1, 2, 3, 4, 5];
+    let arr2: [i32; 5] = [4, 2, 1, 5, 3];
+
+    println!("{:8} {:?}", "Input:", arr2);
+
+    println!("{:8} {:?}", "Output:", arr);
 }
 
 #[cfg(test)]
