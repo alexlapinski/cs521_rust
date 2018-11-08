@@ -5,15 +5,15 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
-    let vec: Vec<i32> = vec![1, 2, 3, 4, 5];
-    let vec2: Vec<i32> = vec![4, 2, 1, 5, 3];
+    let arr:[i32; 5] = [1, 2, 3, 4, 5];
+    let arr2:[i32; 5] = [4, 2, 1, 5, 3];
 
-    print_vector("Input:", vec2);
-    print_vector("Output:", vec);
+    print_array("Input:", &arr2);
+    print_array("Output:", &arr);
 }
 
-fn print_vector<T: Debug>(label:&str, vector:Vec<T>) {
-    println!{"{:8} {:?}", label, vector};
+fn print_array<T: Debug>(label:&str, array:&[T]) {
+    println!{"{:8} {:?}", label, array};
 }
 
 #[cfg(test)]
