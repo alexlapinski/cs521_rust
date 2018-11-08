@@ -5,12 +5,11 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
-    let arr: Vec<i32> = vec![1, 2, 3, 4, 5];
-    let arr2: Vec<i32> = vec![4, 2, 1, 5, 3];
+    let vec: Vec<i32> = vec![1, 2, 3, 4, 5];
+    let vec2: Vec<i32> = vec![4, 2, 1, 5, 3];
 
-    print_vector("Input:", arr2);
-
-    print_vector("Output:", arr);
+    print_vector("Input:", vec2);
+    print_vector("Output:", vec);
 }
 
 fn print_vector<T: Debug>(label:&str, vector:Vec<T>) {
