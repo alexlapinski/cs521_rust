@@ -1,14 +1,20 @@
+use std::fmt::Debug;
+
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
 fn main() {
-    let arr: [i32; 5] = [1, 2, 3, 4, 5];
-    let arr2: [i32; 5] = [4, 2, 1, 5, 3];
+    let arr: Vec<i32> = vec![1, 2, 3, 4, 5];
+    let arr2: Vec<i32> = vec![4, 2, 1, 5, 3];
 
-    println!("{:8} {:?}", "Input:", arr2);
+    print_vector("Input:", arr2);
 
-    println!("{:8} {:?}", "Output:", arr);
+    print_vector("Output:", arr);
+}
+
+fn print_vector<T: Debug>(label:&str, vector:Vec<T>) {
+    println!{"{:8} {:?}", label, vector};
 }
 
 #[cfg(test)]
